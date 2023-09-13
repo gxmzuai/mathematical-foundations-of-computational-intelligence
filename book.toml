@@ -1,0 +1,6 @@
+[book]
+authors = ["jiakai"]
+language = "en"
+multilingual = false
+src = "src"
+title = "计算智能数学基础学习笔记"
