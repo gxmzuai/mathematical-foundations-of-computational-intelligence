@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>线性空间1 - 计算智能数学基础学习笔记</title>
+        <title>赋范线性空间及有界线性算子2 - 计算智能数学基础学习笔记</title>
 
 
         <!-- Custom HTML head -->
@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="230913.html"><strong aria-hidden="true">1.</strong> 集合和映射</a></li><li class="chapter-item expanded "><a href="230915.html" class="active"><strong aria-hidden="true">2.</strong> 线性空间1</a></li><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">3.</strong> 线性空间2 && 内积空间1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">4.</strong> 赋范线性空间及有界线性算子1</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">5.</strong> 赋范线性空间及有界线性算子2</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="230913.html"><strong aria-hidden="true">1.</strong> 集合和映射</a></li><li class="chapter-item expanded "><a href="230915.html"><strong aria-hidden="true">2.</strong> 线性空间1</a></li><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">3.</strong> 线性空间2 && 内积空间1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">4.</strong> 赋范线性空间及有界线性算子1</a></li><li class="chapter-item expanded "><a href="230927.html" class="active"><strong aria-hidden="true">5.</strong> 赋范线性空间及有界线性算子2</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -166,76 +166,55 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p>一、上节课残留知识点</p>
+                        <p>知识回顾：</p>
+<p><img src="https://vip2.loli.io/2023/09/28/OgXl3nx761Uk8Tu.webp" alt="" /></p>
+<p>依范数收敛：</p>
+<p><img src="https://vip2.loli.io/2023/09/28/AXNQFIhL6djfU7b.webp" alt="" /></p>
+<p>范数是什么？</p>
+<p><img src="https://vip2.loli.io/2023/09/28/1r6mUcd4GCHa8DJ.webp" alt="" /></p>
+<p>范数只能由内积导出来吗？</p>
+<p><img src="https://vip2.loli.io/2023/09/28/jAsz34rEUpKF96V.webp" alt="" /></p>
+<p>内积一定导出范数，范数不一定由某个内积导出。</p>
+<p><img src="https://vip2.loli.io/2023/09/28/XNRl1EGIAtqu53O.webp" alt="" /></p>
+<p>一、定理3.2</p>
+<p><img src="https://vip2.loli.io/2023/09/28/VdFohfAr5aq2ZkX.webp" alt="" /></p>
+<p>二、定理3.3</p>
+<p><img src="https://vip2.loli.io/2023/09/28/GQR9WEhCwcziTnm.webp" alt="" /></p>
+<p>三、定理3.4</p>
+<p><img src="https://vip2.loli.io/2023/09/28/Ss7En9AK24vaL6i.webp" alt="" /></p>
+<p>四、等距同构映射</p>
+<p><img src="https://vip2.loli.io/2023/09/28/mbre7jNFEAMp6nl.webp" alt="" /></p>
+<p>五、柯西序列</p>
+<p><img src="https://vip2.loli.io/2023/09/28/B2OxvpR8m7igUjb.webp" alt="" /></p>
+<p>注：柯西序列不一定收敛。</p>
+<p>六、Banach空间</p>
+<p><img src="https://vip2.loli.io/2023/09/28/lOnYGqRcaK19Nku.webp" alt="" /></p>
+<p>七、赋范线性空间的不完备性</p>
+<p><img src="https://vip2.loli.io/2023/09/28/JPoyzRFYQe3uDnl.webp" alt="" /></p>
+<p>八、定理3.5</p>
+<p><img src="https://vip2.loli.io/2023/09/28/fZTe7A36qPwHMiV.webp" alt="" /></p>
+<p>九、国庆作业：</p>
 <ul>
-<li>
-<p>A是可数集的充分必要条件：A的元素可以排列成无穷序列的形式。</p>
-</li>
-<li>
-<p><img src="https://vip2.loli.io/2023/09/15/QVsrSPKfxaHn2UG.webp" alt="" /></p>
-</li>
-<li>
-<p>全体有理数组成的集合是可数集。</p>
-</li>
+<li>完成线性空间与内积空间习题一中的相关习题</li>
 </ul>
-<p>二、上确界和下确界</p>
-<p><img src="https://vip2.loli.io/2023/09/15/QfVR7Cnj1hI9cMi.webp" alt="" /></p>
-<p>注：</p>
+<p><img src="https://vip2.loli.io/2023/09/28/82HkmQBzoXwxRiP.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/09/28/jQOM3WfoNAbKUHt.webp" alt="" /></p>
 <ul>
-<li>
-<p>上确界（最小上界）</p>
-</li>
-<li>
-<p>下确界（最大下界）</p>
-</li>
+<li>完成赋范线性空间及有界线性算子中的相关习题</li>
 </ul>
-<p><img src="https://vip2.loli.io/2023/09/15/hPQ7uMJC96ed1iw.webp" alt="" /></p>
-<p>三、线性空间的定义</p>
-<p><img src="https://vip2.loli.io/2023/09/15/Af27Qxbo6En8XOh.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/09/15/aMuw1IPDZU9cK7g.webp" alt="" /></p>
-<p>四、线性空间的子空间</p>
-<p><img src="https://vip2.loli.io/2023/09/15/PuSyYqKXo5B1pfZ.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/09/15/kvzjqZM4HQ3VD8I.webp" alt="" /></p>
-<ul>
-<li>gpt解释线性空间的子空间</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/09/15/eik9KEzHsptdjaO.webp" alt="" /></p>
-<p>五、线性空间的基</p>
-<ul>
-<li>书本原话</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/09/15/Tx5R2ezplitFGyM.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/09/15/Epw4jfx3JiHeQrR.webp" alt="" /></p>
-<ul>
-<li>gpt解释</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/09/15/wE1hboD3HGFJ8sB.webp" alt="" /></p>
-<p>六、注意点</p>
-<ul>
-<li>什么是标量乘法</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/09/15/nTDPvjizxMhm7ur.webp" alt="" /></p>
-<ul>
-<li>证明子空间的方法</li>
-</ul>
-<p>1、证明零元存在</p>
-<p>2、加法封闭</p>
-<p>3、标量乘法封闭</p>
-<p>七、课后思考</p>
-<p>gpt出题</p>
-<p><img src="https://vip2.loli.io/2023/09/15/Q9NbprWEqJ5u7Rn.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/09/28/cIsxYO1i7jDSPXK.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/09/28/eYAxCaUop7B3kcW.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/09/28/keVWrzjFCsAiG4M.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/09/28/KtIgrLi9Qk6hfRJ.webp" alt="" /></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="230913.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="230922.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="230920.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -243,13 +222,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="230913.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="230922.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="230920.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>
