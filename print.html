@@ -1,17 +1,17 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>计算智能数学基础学习笔记</title>
-        <meta name="robots" content="noindex" />
+        <meta name="robots" content="noindex">
 
 
         <!-- Custom HTML head -->
         
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
@@ -32,7 +32,7 @@
         <!-- Custom theme stylesheets -->
 
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
@@ -62,29 +62,34 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var html = document.querySelector('html');
+            var body = document.querySelector('body');
             var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="230913.html"><strong aria-hidden="true">1.</strong> 集合和映射</a></li><li class="chapter-item expanded "><a href="230915.html"><strong aria-hidden="true">2.</strong> 线性空间1</a></li><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">3.</strong> 线性空间2 && 内积空间1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">4.</strong> 赋范线性空间及有界线性算子1</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">5.</strong> 赋范线性空间及有界线性算子2</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="230913.html"><strong aria-hidden="true">1.</strong> 集合和映射</a></li><li class="chapter-item expanded "><a href="230915.html"><strong aria-hidden="true">2.</strong> 线性空间1</a></li><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">3.</strong> 线性空间2 && 内积空间1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">4.</strong> 赋范线性空间及有界线性算子1</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">5.</strong> 赋范线性空间及有界线性算子2</a></li><li class="chapter-item expanded "><a href="231008.html"><strong aria-hidden="true">6.</strong> 赋范线性空间的点集</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -117,9 +122,9 @@
                                 <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
@@ -181,13 +186,13 @@
 <p>计算智能的数学基础</p>
 </li>
 <li>
-<p><a href="https://ftp.gujiakai.top/%E8%AE%A1%E7%AE%97%E6%99%BA%E8%83%BD%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/book01.pdf">应用数学基础（第四版）上册</a></p>
+<p><a href="https://ftp.gujiakai.top/%E8%AE%A1%E7%AE%97%E6%99%BA%E8%83%BD%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/pdf/book01.pdf">应用数学基础（第四版）上册</a></p>
 </li>
 <li>
-<p><a href="https://ftp.gujiakai.top/%E8%AE%A1%E7%AE%97%E6%99%BA%E8%83%BD%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/book02.pdf">概率论与数理统计（第5版）</a></p>
+<p><a href="https://ftp.gujiakai.top/%E8%AE%A1%E7%AE%97%E6%99%BA%E8%83%BD%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/pdf/book02.pdf">概率论与数理统计（第5版）</a></p>
 </li>
 <li>
-<p><a href="https://ftp.gujiakai.top/%E8%AE%A1%E7%AE%97%E6%99%BA%E8%83%BD%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/book03.pdf">随机过程（第4版）</a>【注：zlibrary里面存在第5版】</p>
+<p><a href="https://ftp.gujiakai.top/%E8%AE%A1%E7%AE%97%E6%99%BA%E8%83%BD%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/pdf/book03.pdf">随机过程（第4版）</a>【注：zlibrary里面存在第5版】</p>
 </li>
 <li>
 <p>数值计算方法</p>
@@ -377,6 +382,7 @@
 <p><img src="https://vip2.loli.io/2023/09/22/1fAgqxm94FYJaE7.webp" alt="" /></p>
 <p>举例：</p>
 <p><img src="https://vip2.loli.io/2023/09/22/bmI5SMJB76szn9E.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/09/7yUMFKLGlIpS23C.webp" alt="" /></p>
 <p>二、赋范线性空间与内积空间的关系</p>
 <p><img src="https://vip2.loli.io/2023/09/22/MBhQZWH3vzyqdUw.webp" alt="" /></p>
 <p>三、由范数导出的度量</p>
@@ -437,6 +443,39 @@
 <p><img src="https://vip2.loli.io/2023/09/28/eYAxCaUop7B3kcW.webp" alt="" /></p>
 <p><img src="https://vip2.loli.io/2023/09/28/keVWrzjFCsAiG4M.webp" alt="" /></p>
 <p><img src="https://vip2.loli.io/2023/09/28/KtIgrLi9Qk6hfRJ.webp" alt="" /></p>
+<div style="break-before: page; page-break-before: always;"></div><p>回顾旧知</p>
+<p>内积导出的范数及其满足的条件</p>
+<p><img src="https://vip2.loli.io/2023/10/08/lcAShYuTribD8Oe.webp" alt="" /></p>
+<p>赋范线性空间</p>
+<p>赋范线性空间（Normed Linear Space）由两部分组成：线性空间和范数。</p>
+<p>Banach空间和Hilbert空间</p>
+<p><img src="https://vip2.loli.io/2023/09/28/lOnYGqRcaK19Nku.webp" alt="" /></p>
+<p>一、开球、闭球、球面</p>
+<p><img src="https://vip2.loli.io/2023/10/08/dyCX2MFB9EgsDSY.webp" alt="" /></p>
+<p>二、开集和闭集</p>
+<p><img src="https://vip2.loli.io/2023/10/08/gWnYmQaXsCeENIM.webp" alt="" /></p>
+<p>注：</p>
+<ul>
+<li>
+<p>空集和全空间既是开集，又是闭集。</p>
+</li>
+<li>
+<p>开球是开集，闭球是闭集。</p>
+</li>
+</ul>
+<p>三、开集和闭集的性质</p>
+<p><img src="https://vip2.loli.io/2023/10/08/2qfR8Dsn6v9XGOY.webp" alt="" /></p>
+<p>无限多个开集的交不一定是开集，无限多个闭集的并也不一定是闭集。</p>
+<p>四、集合的闭包</p>
+<p><img src="https://vip2.loli.io/2023/10/09/cYFHMmoDUNbyq3J.webp" alt="" /></p>
+<p>五、集合闭包的性质</p>
+<p><img src="https://vip2.loli.io/2023/10/09/sZiQUufmWp3XnYj.webp" alt="" /></p>
+<p>六、定理3.8</p>
+<p><img src="https://vip2.loli.io/2023/10/09/GJXYFdTmA5woc8n.webp" alt="" /></p>
+<p>七、定理3.9</p>
+<p><img src="https://vip2.loli.io/2023/10/09/ME9ISXZAiRJyVea.webp" alt="" /></p>
+<p>八、什么是距点</p>
+<p><img src="https://vip2.loli.io/2023/10/09/SkQd6l3EOibDePo.webp" alt="" /></p>
 
                     </main>
 

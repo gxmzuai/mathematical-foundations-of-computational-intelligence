@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>赋范线性空间及有界线性算子2 - 计算智能数学基础学习笔记</title>
+        <title>赋范线性空间的点集 - 计算智能数学基础学习笔记</title>
 
 
         <!-- Custom HTML head -->
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="230913.html"><strong aria-hidden="true">1.</strong> 集合和映射</a></li><li class="chapter-item expanded "><a href="230915.html"><strong aria-hidden="true">2.</strong> 线性空间1</a></li><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">3.</strong> 线性空间2 && 内积空间1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">4.</strong> 赋范线性空间及有界线性算子1</a></li><li class="chapter-item expanded "><a href="230927.html" class="active"><strong aria-hidden="true">5.</strong> 赋范线性空间及有界线性算子2</a></li><li class="chapter-item expanded "><a href="231008.html"><strong aria-hidden="true">6.</strong> 赋范线性空间的点集</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="230913.html"><strong aria-hidden="true">1.</strong> 集合和映射</a></li><li class="chapter-item expanded "><a href="230915.html"><strong aria-hidden="true">2.</strong> 线性空间1</a></li><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">3.</strong> 线性空间2 && 内积空间1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">4.</strong> 赋范线性空间及有界线性算子1</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">5.</strong> 赋范线性空间及有界线性算子2</a></li><li class="chapter-item expanded "><a href="231008.html" class="active"><strong aria-hidden="true">6.</strong> 赋范线性空间的点集</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -171,58 +171,48 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p>知识回顾：</p>
-<p><img src="https://vip2.loli.io/2023/09/28/OgXl3nx761Uk8Tu.webp" alt="" /></p>
-<p>依范数收敛：</p>
-<p><img src="https://vip2.loli.io/2023/09/28/AXNQFIhL6djfU7b.webp" alt="" /></p>
-<p>范数是什么？</p>
-<p><img src="https://vip2.loli.io/2023/09/28/1r6mUcd4GCHa8DJ.webp" alt="" /></p>
-<p>范数只能由内积导出来吗？</p>
-<p><img src="https://vip2.loli.io/2023/09/28/jAsz34rEUpKF96V.webp" alt="" /></p>
-<p>内积一定导出范数，范数不一定由某个内积导出。</p>
-<p><img src="https://vip2.loli.io/2023/09/28/XNRl1EGIAtqu53O.webp" alt="" /></p>
-<p>一、定理3.2</p>
-<p><img src="https://vip2.loli.io/2023/09/28/VdFohfAr5aq2ZkX.webp" alt="" /></p>
-<p>二、定理3.3</p>
-<p><img src="https://vip2.loli.io/2023/09/28/GQR9WEhCwcziTnm.webp" alt="" /></p>
-<p>三、定理3.4</p>
-<p><img src="https://vip2.loli.io/2023/09/28/Ss7En9AK24vaL6i.webp" alt="" /></p>
-<p>四、等距同构映射</p>
-<p><img src="https://vip2.loli.io/2023/09/28/mbre7jNFEAMp6nl.webp" alt="" /></p>
-<p>五、柯西序列</p>
-<p><img src="https://vip2.loli.io/2023/09/28/B2OxvpR8m7igUjb.webp" alt="" /></p>
-<p>注：柯西序列不一定收敛。</p>
-<p>六、Banach空间</p>
+                        <p>回顾旧知</p>
+<p>内积导出的范数及其满足的条件</p>
+<p><img src="https://vip2.loli.io/2023/10/08/lcAShYuTribD8Oe.webp" alt="" /></p>
+<p>赋范线性空间</p>
+<p>赋范线性空间（Normed Linear Space）由两部分组成：线性空间和范数。</p>
+<p>Banach空间和Hilbert空间</p>
 <p><img src="https://vip2.loli.io/2023/09/28/lOnYGqRcaK19Nku.webp" alt="" /></p>
-<p>七、赋范线性空间的不完备性</p>
-<p><img src="https://vip2.loli.io/2023/09/28/JPoyzRFYQe3uDnl.webp" alt="" /></p>
-<p>八、定理3.5</p>
-<p><img src="https://vip2.loli.io/2023/09/28/fZTe7A36qPwHMiV.webp" alt="" /></p>
-<p>九、国庆作业：</p>
+<p>一、开球、闭球、球面</p>
+<p><img src="https://vip2.loli.io/2023/10/08/dyCX2MFB9EgsDSY.webp" alt="" /></p>
+<p>二、开集和闭集</p>
+<p><img src="https://vip2.loli.io/2023/10/08/gWnYmQaXsCeENIM.webp" alt="" /></p>
+<p>注：</p>
 <ul>
-<li>完成线性空间与内积空间习题一中的相关习题</li>
+<li>
+<p>空集和全空间既是开集，又是闭集。</p>
+</li>
+<li>
+<p>开球是开集，闭球是闭集。</p>
+</li>
 </ul>
-<p><img src="https://vip2.loli.io/2023/09/28/82HkmQBzoXwxRiP.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/09/28/jQOM3WfoNAbKUHt.webp" alt="" /></p>
-<ul>
-<li>完成赋范线性空间及有界线性算子中的相关习题</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/09/28/cIsxYO1i7jDSPXK.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/09/28/eYAxCaUop7B3kcW.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/09/28/keVWrzjFCsAiG4M.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/09/28/KtIgrLi9Qk6hfRJ.webp" alt="" /></p>
+<p>三、开集和闭集的性质</p>
+<p><img src="https://vip2.loli.io/2023/10/08/2qfR8Dsn6v9XGOY.webp" alt="" /></p>
+<p>无限多个开集的交不一定是开集，无限多个闭集的并也不一定是闭集。</p>
+<p>四、集合的闭包</p>
+<p><img src="https://vip2.loli.io/2023/10/09/cYFHMmoDUNbyq3J.webp" alt="" /></p>
+<p>五、集合闭包的性质</p>
+<p><img src="https://vip2.loli.io/2023/10/09/sZiQUufmWp3XnYj.webp" alt="" /></p>
+<p>六、定理3.8</p>
+<p><img src="https://vip2.loli.io/2023/10/09/GJXYFdTmA5woc8n.webp" alt="" /></p>
+<p>七、定理3.9</p>
+<p><img src="https://vip2.loli.io/2023/10/09/ME9ISXZAiRJyVea.webp" alt="" /></p>
+<p>八、什么是距点</p>
+<p><img src="https://vip2.loli.io/2023/10/09/SkQd6l3EOibDePo.webp" alt="" /></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="230922.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="230927.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="231008.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -230,13 +220,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="230922.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="230927.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="231008.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>
