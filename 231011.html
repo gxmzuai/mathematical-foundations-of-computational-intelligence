@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>集合和映射 - 计算智能数学基础学习笔记</title>
+        <title>赋范线性空间的点集2 &amp;&amp; 度量空间 - 计算智能数学基础学习笔记</title>
 
 
         <!-- Custom HTML head -->
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="230913.html" class="active"><strong aria-hidden="true">1.</strong> 集合和映射</a></li><li class="chapter-item expanded "><a href="230915.html"><strong aria-hidden="true">2.</strong> 线性空间1</a></li><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">3.</strong> 线性空间2 && 内积空间1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">4.</strong> 赋范线性空间及有界线性算子1</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">5.</strong> 赋范线性空间及有界线性算子2</a></li><li class="chapter-item expanded "><a href="231008.html"><strong aria-hidden="true">6.</strong> 赋范线性空间的点集1</a></li><li class="chapter-item expanded "><a href="231011.html"><strong aria-hidden="true">7.</strong> 赋范线性空间的点集2 && 度量空间</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="230913.html"><strong aria-hidden="true">1.</strong> 集合和映射</a></li><li class="chapter-item expanded "><a href="230915.html"><strong aria-hidden="true">2.</strong> 线性空间1</a></li><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">3.</strong> 线性空间2 && 内积空间1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">4.</strong> 赋范线性空间及有界线性算子1</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">5.</strong> 赋范线性空间及有界线性算子2</a></li><li class="chapter-item expanded "><a href="231008.html"><strong aria-hidden="true">6.</strong> 赋范线性空间的点集1</a></li><li class="chapter-item expanded "><a href="231011.html" class="active"><strong aria-hidden="true">7.</strong> 赋范线性空间的点集2 && 度量空间</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -171,139 +171,41 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p>一、智能的定义</p>
-<p>智能就是在巨大的搜素空间中迅速找到一个满意解的能力。</p>
-<p>二、课时介绍</p>
-<p><img src="https://vip2.loli.io/2023/09/13/5HtZU47q3WiQTfX.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/09/13/7k1qyRu4Np6tOcL.webp" alt="" /></p>
-<p>三、教材</p>
-<ul>
-<li>
-<p>人工智能数学基础</p>
-</li>
-<li>
-<p>计算智能的数学基础</p>
-</li>
-<li>
-<p><a href="https://ftp.gujiakai.top/%E8%AE%A1%E7%AE%97%E6%99%BA%E8%83%BD%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/pdf/book01.pdf">应用数学基础（第四版）上册</a></p>
-</li>
-<li>
-<p><a href="https://ftp.gujiakai.top/%E8%AE%A1%E7%AE%97%E6%99%BA%E8%83%BD%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/pdf/book02.pdf">概率论与数理统计（第5版）</a></p>
-</li>
-<li>
-<p><a href="https://ftp.gujiakai.top/%E8%AE%A1%E7%AE%97%E6%99%BA%E8%83%BD%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/pdf/book03.pdf">随机过程（第4版）</a>【注：zlibrary里面存在第5版】</p>
-</li>
-<li>
-<p>数值计算方法</p>
-</li>
-<li>
-<p>计算方法(第2版)</p>
-</li>
-<li>
-<p>贝叶斯网引论</p>
-</li>
-</ul>
-<p>四、常用集合记号</p>
-<p><img src="https://vip2.loli.io/2023/09/13/drmGxJoEljMFQ5H.webp" alt="" /></p>
-<p>五、集合的余集/补集</p>
-<p><img src="https://vip2.loli.io/2023/09/13/znVwUGgCcRxho9f.webp" alt="" /></p>
-<p>六、定理1.1</p>
-<p><img src="https://vip2.loli.io/2023/09/13/1SwaGWNqlodrUPI.webp" alt="" /></p>
-<p>七、定理1.2</p>
-<p><img src="https://vip2.loli.io/2023/09/13/EH4c6dSKVl3sTjy.webp" alt="" /></p>
-<p>八、集合的直积</p>
-<p><img src="https://vip2.loli.io/2023/09/13/vk9lia5mHUpz6jS.webp" alt="" /></p>
-<p>九、定理1.3</p>
-<p><img src="https://vip2.loli.io/2023/09/13/82mZehcYfBEVuQA.webp" alt="" /></p>
-<p>十、总结</p>
-<p>集合常用大写字母表示，集合 元素常用小写字母表示，通常，表示集合的方法采用列举法和描述法。</p>
-<p>本节课后半部分的概念较多，需要深入理解。</p>
-<p>概念列举</p>
-<ul>
-<li>
-<p>集合：一个无序的元素组合，而且其中的元素是唯一的，不会有重复。</p>
-</li>
-<li>
-<p>单元素集合</p>
-</li>
-<li>
-<p>有限集</p>
-</li>
-<li>
-<p>空集</p>
-</li>
-<li>
-<p>无限集</p>
-</li>
-<li>
-<p>交集、并集、差集、余集/补集【注意差集和余集/补集的区别】</p>
-</li>
-<li>
-<p>集族</p>
-</li>
-<li>
-<p>直积</p>
-</li>
-<li>
-<p>映射</p>
-</li>
-<li>
-<p>象</p>
-</li>
-<li>
-<p>逆象/原象</p>
-</li>
-<li>
-<p>泛函</p>
-</li>
-<li>
-<p>满射：每个输出都有至少一个输入</p>
-</li>
-<li>
-<p>单射：每个输入都有一个唯一的输出</p>
-</li>
-<li>
-<p>双射：同时是单射和满射</p>
-</li>
-<li>
-<p>逆映射（注意前提条件：单射）</p>
-</li>
-<li>
-<p>复合映射</p>
-</li>
-<li>
-<p>常值映射</p>
-</li>
-<li>
-<p>恒等映射</p>
-</li>
-<li>
-<p>可数集：如果你可以对集合中的每个元素进行一一的编号（使用自然数），那么这个集合就是可数的。</p>
-</li>
-<li>
-<p>基数/势</p>
-</li>
-<li>
-<p>不可数集：不是可数集的无限集。</p>
-</li>
-<li>
-<p>至多可数集：有限集和可数集</p>
-</li>
-</ul>
-<p>不懂的概念可以直接问GPT4。</p>
-<p>注意点：</p>
-<ul>
-<li>对等的两个集合不一定相等。</li>
-</ul>
+                        <p>一、收敛序列一定是柯西列，柯西列不一定收敛。</p>
+<p>二、定义3.16</p>
+<p><img src="https://vip2.loli.io/2023/10/11/S35Ev7Yn4Akal1f.webp" alt="" /></p>
+<p>三、Weierstrass定理</p>
+<p><img src="https://vip2.loli.io/2023/10/11/rxU21mkgtDPadhp.webp" alt="" /></p>
+<p>四、度量空间的定义</p>
+<p><img src="https://vip2.loli.io/2023/10/11/8DfvqaGUotKWOLl.webp" alt="" /></p>
+<p>函数d取集合X中的两个元素并返回一个实数。这个实数表示这两个元素之间的“距离”。</p>
+<p>五、引理3.5</p>
+<p><img src="https://vip2.loli.io/2023/10/11/pMds39wDbHBKRio.webp" alt="" /></p>
+<p>赋范线性空间一定是度量空间；度量空间不一定是赋范线性空间。</p>
+<p>六、引理3.1</p>
+<p><img src="https://vip2.loli.io/2023/10/11/vf4ahgqy2Rcr5CY.webp" alt="" /></p>
+<p>七、等距映射</p>
+<p><img src="https://vip2.loli.io/2023/10/11/g5OfVu1hZTFdlKc.webp" alt="" /></p>
+<p>八、度量空间的点集和序列的收敛</p>
+<p><img src="https://vip2.loli.io/2023/10/11/1rbpMROwD5vuEyG.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/11/ZmNaoHIBckJ6xwS.webp" alt="" /></p>
+<p>九、引理3.3和引理3.4</p>
+<p><img src="https://vip2.loli.io/2023/10/11/dgE5qQOcYGMJVpB.webp" alt="" /></p>
+<p>完备的度量空间的结论：</p>
+<p>设X是完备的度量空间，A⊂X，则X的子空间A是完备的，当且仅当A是X中的闭集。</p>
+<p>十、完备化空间</p>
+<p><img src="https://vip2.loli.io/2023/10/11/T7AEuq6nvpZIrw5.webp" alt="" /></p>
+<p>十一、定理3.11</p>
+<p><img src="https://vip2.loli.io/2023/10/11/BmeP1VACXGF6uq4.webp" alt="" /></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-
-                            <a rel="next prefetch" href="230915.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
+                            <a rel="prev" href="231008.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
                             </a>
+
 
                         <div style="clear: both"></div>
                     </nav>
@@ -311,10 +213,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-
-                    <a rel="next prefetch" href="230915.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
+                    <a rel="prev" href="231008.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
                     </a>
+
             </nav>
 
         </div>
