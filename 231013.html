@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>赋范线性空间的点集2 &amp;&amp; 度量空间 - 计算智能数学基础学习笔记</title>
+        <title>紧性 &amp;&amp; 方阵范数 - 计算智能数学基础学习笔记</title>
 
 
         <!-- Custom HTML head -->
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="230913.html"><strong aria-hidden="true">1.</strong> 集合和映射</a></li><li class="chapter-item expanded "><a href="230915.html"><strong aria-hidden="true">2.</strong> 线性空间1</a></li><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">3.</strong> 线性空间2 && 内积空间1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">4.</strong> 赋范线性空间及有界线性算子1</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">5.</strong> 赋范线性空间及有界线性算子2</a></li><li class="chapter-item expanded "><a href="231008.html"><strong aria-hidden="true">6.</strong> 赋范线性空间的点集1</a></li><li class="chapter-item expanded "><a href="231011.html" class="active"><strong aria-hidden="true">7.</strong> 赋范线性空间的点集2 && 度量空间</a></li><li class="chapter-item expanded "><a href="231013.html"><strong aria-hidden="true">8.</strong> 紧性 && 方阵范数</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="230913.html"><strong aria-hidden="true">1.</strong> 集合和映射</a></li><li class="chapter-item expanded "><a href="230915.html"><strong aria-hidden="true">2.</strong> 线性空间1</a></li><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">3.</strong> 线性空间2 && 内积空间1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">4.</strong> 赋范线性空间及有界线性算子1</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">5.</strong> 赋范线性空间及有界线性算子2</a></li><li class="chapter-item expanded "><a href="231008.html"><strong aria-hidden="true">6.</strong> 赋范线性空间的点集1</a></li><li class="chapter-item expanded "><a href="231011.html"><strong aria-hidden="true">7.</strong> 赋范线性空间的点集2 && 度量空间</a></li><li class="chapter-item expanded "><a href="231013.html" class="active"><strong aria-hidden="true">8.</strong> 紧性 && 方阵范数</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -171,44 +171,46 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p>一、收敛序列一定是柯西列，柯西列不一定收敛。</p>
-<p>二、定义3.16</p>
-<p><img src="https://vip2.loli.io/2023/10/11/S35Ev7Yn4Akal1f.webp" alt="" /></p>
-<p>三、Weierstrass定理</p>
-<p><img src="https://vip2.loli.io/2023/10/11/rxU21mkgtDPadhp.webp" alt="" /></p>
-<p>四、度量空间的定义</p>
-<p><img src="https://vip2.loli.io/2023/10/11/8DfvqaGUotKWOLl.webp" alt="" /></p>
-<p>函数d取集合X中的两个元素并返回一个实数。这个实数表示这两个元素之间的“距离”。</p>
-<p>五、引理3.5</p>
-<p><img src="https://vip2.loli.io/2023/10/11/pMds39wDbHBKRio.webp" alt="" /></p>
-<p>赋范线性空间一定是度量空间；度量空间不一定是赋范线性空间。</p>
-<p>六、引理3.1</p>
-<p><img src="https://vip2.loli.io/2023/10/11/vf4ahgqy2Rcr5CY.webp" alt="" /></p>
-<p>七、等距映射</p>
-<p><img src="https://vip2.loli.io/2023/10/11/g5OfVu1hZTFdlKc.webp" alt="" /></p>
-<p>八、度量空间的点集和序列的收敛</p>
-<p><img src="https://vip2.loli.io/2023/10/11/1rbpMROwD5vuEyG.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/11/ZmNaoHIBckJ6xwS.webp" alt="" /></p>
-<p>九、引理3.3和引理3.4</p>
-<p><img src="https://vip2.loli.io/2023/10/11/dgE5qQOcYGMJVpB.webp" alt="" /></p>
-<p>完备的度量空间的结论：</p>
-<p>设X是完备的度量空间，A⊂X，则X的子空间A是完备的，当且仅当A是X中的闭集。</p>
-<p>十、完备化空间</p>
-<p><img src="https://vip2.loli.io/2023/10/11/T7AEuq6nvpZIrw5.webp" alt="" /></p>
-<p>十一、定理3.11</p>
-<p><img src="https://vip2.loli.io/2023/10/11/BmeP1VACXGF6uq4.webp" alt="" /></p>
+                        <p>注：计算智能与数学基础期末考试，只要写上姓名学号，保证及格。😅</p>
+<p>知识回顾</p>
+<p>接触点的充分必要条件</p>
+<p><img src="https://vip2.loli.io/2023/10/14/Suzmb4TWHiw95tn.webp" alt="" /></p>
+<p>收敛序列一定是柯西列，柯西列不一定收敛。</p>
+<p>一、定义3.29</p>
+<p><img src="https://vip2.loli.io/2023/10/14/2VAWcLJZo5w9euq.webp" alt="" /></p>
+<p>注：紧集一定是闭集，闭集不一定是紧集。</p>
+<p>二、紧集和紧空间具有的性质</p>
+<p><img src="https://vip2.loli.io/2023/10/14/lAg2ewBUzTt5jh4.webp" alt="" /></p>
+<p>三、在一个度量空间或赋范线性空间中，如果每一个柯西序列都在该空间中收敛，那么这个空间被称为完备的。</p>
+<p>四、一个集合是闭集的当且仅当它包含其所有的接触点或边界点。谈到紧集就要将其与收敛子列联系。</p>
+<p>五、定理3.22</p>
+<p><img src="https://vip2.loli.io/2023/10/14/XvPicOIGejB1w5R.webp" alt="" /></p>
+<p>六、定理3.23</p>
+<p><img src="https://vip2.loli.io/2023/10/14/Ip1vBtaVJDi8ZoE.webp" alt="" /></p>
+<p>泛函：映射后是实数（一般空间—&gt;实数）</p>
+<p>函数：实数—&gt;实数</p>
+<p>映射/算子：一般空间—&gt;一般空间</p>
+<p>七、紧集一定有界</p>
+<p><img src="https://vip2.loli.io/2023/10/14/hlxyivoIrzB37sD.webp" alt="" /></p>
+<p>八、方阵范数定义3.32</p>
+<p><img src="https://vip2.loli.io/2023/10/14/bG1o2re8Mqgi4xc.webp" alt="" /></p>
+<p>九、不是所有的范数都有内积</p>
+<p><img src="https://vip2.loli.io/2023/10/14/NE4DzFG9LohBvnY.webp" alt="" /></p>
+<p>十、定理3.32</p>
+<p><img src="https://vip2.loli.io/2023/10/14/JmYuXMpbRsf1TIE.webp" alt="" /></p>
+<p>十一、方阵的算子范数</p>
+<p><img src="https://vip2.loli.io/2023/10/14/cieDmAKlLERhVto.webp" alt="" /></p>
+<p>十二、方阵的谱半径</p>
+<p><img src="https://vip2.loli.io/2023/10/14/BuQX2fGKhn16zt3.webp" alt="" /></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="231008.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="231011.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="231013.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -216,13 +218,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="231008.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="231011.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="231013.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>
