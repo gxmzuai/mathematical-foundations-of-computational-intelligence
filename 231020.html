@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>线性空间2 &amp;&amp; 内积空间1 - 计算智能数学基础学习笔记</title>
+        <title>模糊集和隶属函数 &amp;&amp; 模糊集上的运算 - 计算智能数学基础学习笔记</title>
 
 
         <!-- Custom HTML head -->
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="230913.html"><strong aria-hidden="true">1.</strong> 集合和映射</a></li><li class="chapter-item expanded "><a href="230915.html"><strong aria-hidden="true">2.</strong> 线性空间1</a></li><li class="chapter-item expanded "><a href="230920.html" class="active"><strong aria-hidden="true">3.</strong> 线性空间2 && 内积空间1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">4.</strong> 赋范线性空间及有界线性算子1</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">5.</strong> 赋范线性空间及有界线性算子2</a></li><li class="chapter-item expanded "><a href="231008.html"><strong aria-hidden="true">6.</strong> 赋范线性空间的点集1</a></li><li class="chapter-item expanded "><a href="231011.html"><strong aria-hidden="true">7.</strong> 赋范线性空间的点集2 && 度量空间</a></li><li class="chapter-item expanded "><a href="231013.html"><strong aria-hidden="true">8.</strong> 紧性 && 方阵范数</a></li><li class="chapter-item expanded "><a href="231018.html"><strong aria-hidden="true">9.</strong> 向量和矩阵的微分和积分</a></li><li class="chapter-item expanded "><a href="231020.html"><strong aria-hidden="true">10.</strong> 模糊集和隶属函数 && 模糊集上的运算</a></li><li class="chapter-item expanded "><a href="231025.html"><strong aria-hidden="true">11.</strong> 凸模糊集及其性质</a></li><li class="chapter-item expanded "><a href="231101.html"><strong aria-hidden="true">12.</strong> 插值法1</a></li><li class="chapter-item expanded "><a href="231108.html"><strong aria-hidden="true">13.</strong> 插值法2</a></li><li class="chapter-item expanded "><a href="231110.html"><strong aria-hidden="true">14.</strong> 数值积分和数值微分</a></li><li class="chapter-item expanded "><a href="231115.html"><strong aria-hidden="true">15.</strong> Gauss型求积公式与数值微分</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="230913.html"><strong aria-hidden="true">1.</strong> 集合和映射</a></li><li class="chapter-item expanded "><a href="230915.html"><strong aria-hidden="true">2.</strong> 线性空间1</a></li><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">3.</strong> 线性空间2 && 内积空间1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">4.</strong> 赋范线性空间及有界线性算子1</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">5.</strong> 赋范线性空间及有界线性算子2</a></li><li class="chapter-item expanded "><a href="231008.html"><strong aria-hidden="true">6.</strong> 赋范线性空间的点集1</a></li><li class="chapter-item expanded "><a href="231011.html"><strong aria-hidden="true">7.</strong> 赋范线性空间的点集2 && 度量空间</a></li><li class="chapter-item expanded "><a href="231013.html"><strong aria-hidden="true">8.</strong> 紧性 && 方阵范数</a></li><li class="chapter-item expanded "><a href="231018.html"><strong aria-hidden="true">9.</strong> 向量和矩阵的微分和积分</a></li><li class="chapter-item expanded "><a href="231020.html" class="active"><strong aria-hidden="true">10.</strong> 模糊集和隶属函数 && 模糊集上的运算</a></li><li class="chapter-item expanded "><a href="231025.html"><strong aria-hidden="true">11.</strong> 凸模糊集及其性质</a></li><li class="chapter-item expanded "><a href="231101.html"><strong aria-hidden="true">12.</strong> 插值法1</a></li><li class="chapter-item expanded "><a href="231108.html"><strong aria-hidden="true">13.</strong> 插值法2</a></li><li class="chapter-item expanded "><a href="231110.html"><strong aria-hidden="true">14.</strong> 数值积分和数值微分</a></li><li class="chapter-item expanded "><a href="231115.html"><strong aria-hidden="true">15.</strong> Gauss型求积公式与数值微分</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -171,39 +171,60 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p>一、线性算子</p>
-<p><img src="https://vip2.loli.io/2023/09/20/wL5SruYxhVsUHOk.webp" alt="" /></p>
-<p>二、一个线性算子对应一个矩阵，反过来也成立。</p>
-<p>三、线性算子的零空间</p>
-<p><img src="https://vip2.loli.io/2023/09/20/GVFaXUfxPLqsN1R.webp" alt="" /></p>
-<p>四、线性同构</p>
-<p><img src="https://vip2.loli.io/2023/09/20/HXenf8jOqPrmCY6.webp" alt="" /></p>
-<p>五、张成</p>
-<p><img src="https://vip2.loli.io/2023/09/20/UuvbWOkzX8QYGdq.webp" alt="" /></p>
-<p>六、内积空间</p>
-<p><img src="https://vip2.loli.io/2023/09/20/PtxbGvieSAEMc7z.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/09/20/gIVv2Pmj3JtZrMA.webp" alt="" /></p>
-<p>七、内积导出的范数</p>
-<p><img src="https://vip2.loli.io/2023/09/20/P6HbpFmCr95xzfw.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/09/20/CqIeQrZcVYzaoOp.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/09/20/1o7dVxBgWfm6Jpc.webp" alt="" /></p>
-<p>八、正交</p>
-<p><img src="https://vip2.loli.io/2023/09/20/4eq6kMUVO3KvZFx.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/09/20/rnlvFE8UjuI1RCc.webp" alt="" /></p>
-<p>九、内积空间的子空间和同构</p>
-<p><img src="https://vip2.loli.io/2023/09/20/8s62QkRxfLVNCB7.webp" alt="" /></p>
-<p>十、内积空间的正交系</p>
-<p><img src="https://vip2.loli.io/2023/09/20/192UorA6hqiyenm.webp" alt="" /></p>
+                        <p>一、特征函数</p>
+<p><img src="https://vip2.loli.io/2023/11/07/XgkvAVbNxjrHSR3.webp" alt="" /></p>
+<p>二、命题8.1.1</p>
+<p><img src="https://vip2.loli.io/2023/11/07/p6iY48GD15Mha9u.webp" alt="" /></p>
+<p>三、命题8.1.2~8.1.4</p>
+<p><img src="https://vip2.loli.io/2023/11/07/vte8mx1VT3CkB6H.webp" alt="" /></p>
+<p>注：余集，通常称为补集。</p>
+<p>四、定义8.1.1</p>
+<p><img src="https://vip2.loli.io/2023/11/07/fH78mVyqwZXJLNn.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/11/07/QOnAjILr5FCdfYo.webp" alt="" /></p>
+<p>五、模糊集、隶属度、隶属函数的解释</p>
+<p><img src="https://vip2.loli.io/2023/11/07/WdGI62ZquU7V9CX.webp" alt="" /></p>
+<p>六、模糊集合的表示法</p>
+<p>论域X是有限集的情况</p>
+<ul>
+<li>查德表示法</li>
+</ul>
+<p><img src="https://vip2.loli.io/2023/11/07/EIMYXPOALwfahyo.webp" alt="" /></p>
+<ul>
+<li>向量表示法、序偶表示法</li>
+</ul>
+<p><img src="https://vip2.loli.io/2023/11/07/ae5kWzlJ7U23hMR.webp" alt="" /></p>
+<p>论域X是连续区间的情况</p>
+<p><img src="https://vip2.loli.io/2023/11/07/Pb9zhlkStNf6via.webp" alt="" /></p>
+<p>七、模糊集上的基本运算</p>
+<p>定义8.2.1~定义8.2.2</p>
+<p><img src="https://vip2.loli.io/2023/11/07/QEOwIkNfgKb9GVL.webp" alt="" /></p>
+<p>定义8.2.3~定义8.2.4</p>
+<p><img src="https://vip2.loli.io/2023/11/07/wbBuprk1qIUJonW.webp" alt="" /></p>
+<p>定义8.2.5</p>
+<p><img src="https://vip2.loli.io/2023/11/07/oyXHmgx5QGpJAjP.webp" alt="" /></p>
+<p>八、模糊集运算的基本性质</p>
+<p><img src="https://vip2.loli.io/2023/11/07/OMXbIPq5uJNYV9U.webp" alt="" /></p>
+<p>注；模糊集不满足互补律。</p>
+<p><img src="https://vip2.loli.io/2023/11/07/TWxdPCEZ46GSKzY.webp" alt="" /></p>
+<p>疑问</p>
+<ul>
+<li>论域是什么？</li>
+</ul>
+<p><img src="https://vip2.loli.io/2023/11/07/UJjB82VHohxiMrF.webp" alt="" /></p>
+<ul>
+<li>如何理解：一个集合对应一个映射，一个映射对应一个集合</li>
+</ul>
+<p><img src="https://vip2.loli.io/2023/11/07/ZbgXmqUrMTa8D5h.webp" alt="" /></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="230915.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="231018.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="230922.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="231025.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -213,11 +234,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="230915.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="231018.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="230922.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="231025.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
